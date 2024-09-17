@@ -13,7 +13,7 @@ ul {
 }
 
 a {
-    color:white;
+    color: #5c5c5c;
     text-decoration: none;
 }
 
@@ -55,8 +55,14 @@ footer p {
     padding: 0px 50px;
 }
 
+nav a {
+    display: inline-block;
+    transition: .2s;
+}
+
 nav a:hover {
     color: rgb(93, 214, 93);
+    transform: scale(1.10);
 }
 
 footer a:hover {
