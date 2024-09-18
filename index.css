@@ -1,8 +1,11 @@
+/* GERAIS */
 body {
     color: white;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 50px;
 }
+
 
 ul {
     display: flex;
@@ -12,30 +15,93 @@ ul {
     padding: 16px;
 }
 
-nav ul li {
-    margin-right: 100px;
-}
-
 a {
     color: #5c5c5c;
     text-decoration: none;
 }
 
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid rgb(93, 214, 93);
-}
-
-.center {
-    text-align: center;
+nav ul li {
+    margin-right: 100px;
 }
 
 h1 {
+    color: #FFFF;
+    font-size: 33px;
+}
+
+h1 span{
     color: rgb(93, 214, 93);
 }
 
+.contato button {
+    display: inline-block;
+    transition: .2s;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    box-shadow: 0px 0px 8px #00FF0868;
+    color: #002b0268;
+    transform: scale(1.05);
+}
+
+/* Navegação */
+.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    display: inline-block;
+    transition: .2s;
+}
+
+nav a:hover {
+    color: rgb(93, 214, 93);
+    transform: scale(1.10);
+}
+
+/* Descrição */
+
+header {
+    padding: 40px 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+header img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid rgb(93, 214, 93);
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.description {
+    text-align: justify;
+}
+
+/* Informações */
+main h3 {
+    color: rgb(93, 214, 93);
+    margin-bottom: 5px;
+}
+
+main p {
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+/* Rodapé */
 footer img {
     width: 20px;
     height: 20px;
@@ -55,44 +121,15 @@ footer p {
     margin-top: 2px;
 }
 
-.container {
-    padding: 0px 50px;
-}
-
-.interface {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav a {
-    display: inline-block;
-    transition: .2s;
-}
-
-nav a:hover {
-    color: rgb(93, 214, 93);
-    transform: scale(1.10);
-}
-
 footer a:hover {
     color: rgb(93, 214, 93);
 }
 
-.contato button {
-    display: inline-block;
-    transition: .2s;
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #00FF08;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.contato button:hover {
-    box-shadow: 0px 0px 8px #00FF0868;
-    color: #002b0268;
-    transform: scale(1.10);
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
 }
