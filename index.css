@@ -6,10 +6,14 @@ body {
 
 ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Alinha os itens ao centro */
     list-style-type: none;
     align-items: center;
     padding: 16px;
+}
+
+nav ul li {
+    margin-right: 100px;
 }
 
 a {
@@ -29,7 +33,7 @@ header img {
 }
 
 h1 {
-    color: rgb(93, 214, 93)
+    color: rgb(93, 214, 93);
 }
 
 footer img {
@@ -55,6 +59,12 @@ footer p {
     padding: 0px 50px;
 }
 
+.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 nav a {
     display: inline-block;
     transition: .2s;
@@ -67,4 +77,22 @@ nav a:hover {
 
 footer a:hover {
     color: rgb(93, 214, 93);
+}
+
+.contato button {
+    display: inline-block;
+    transition: .2s;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    box-shadow: 0px 0px 8px #00FF0868;
+    color: #002b0268;
+    transform: scale(1.10);
 }
