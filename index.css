@@ -211,3 +211,50 @@ footer .line-footer p a {
     margin: 0 5px;
     transition: .2s;
 }
+
+@media screen and (max-width: 1020px){
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+    section.topo-do-site .flex {
+        gap: 60px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 24px;
+    }
+
+    .topo-do-site .img-topo-do-site img {
+        width: 100%;
+    }
+
+    .introducao-topo-do-site .botao-contato {
+        display: none;
+    }
+
+    /* RODAPÉ */
+    footer {
+        padding: 20px 8%;
+    }
+
+    .botao-social{
+        text-align: center;
+    }
+
+}
