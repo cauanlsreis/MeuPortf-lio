@@ -4,96 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cauan Lucas</title>
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
+
+    <header>
+
         <div class="interface">
-            <nav>
+            <nav class="menu-desktop">
                 <ul>
-                    <li>
-                        <a href="index.html" >Sobre mim</a>
-                    </li>
-                    <li>
-                        <a href="projects.html" >Projetos</a>
-                    </li>
+                    <li><a href="index.html" >Início</a></li>
+                    <li><a href="projects.html" >Projetos</a></li>
                 </ul>
-            </nav>
+            </nav><!--menu-desktop-->
     
-            <div class="contato">
+            <div class="botao-contato">
                 <a href="contacts.html"> 
                     <button>Contato</button>
                 </a>
-            </div> <!--contato-->
+            </div> <!--botao-contato-->
         </div> <!--interface-->
-        
-        <header>
-            <div class="description">
-                <h1>Olá, me chamo <span>Cauan Lucas Silva Reis.</span></h1>
-                <p>Tenho 20 anos, sou estudante do 6° período de Bacharelado em Ciência da Computação, 
-                   gosto da área de cibersegurança e atualmente estou desenvolvendo um projeto de 
-                   visão computacional com python e estudando front-end. 
-                   Procuro um estágio na área de desenvolvedor, estou disposto a aprender 
-                   novas linguagens e usar novas ferramentas confrome necessário.
-                </p>
-                <div class="contato">
-                    <a href="contacts.html">
-                        <button>Entre em contato</button>
-                    </a>
-                </div><!--contato-->
-            </div><!--description-->
 
-            <div class="img-description">
-                <img src="img/Cauan.jpeg">
-            </div><!--img-description-->
-        </header>
-    
-        <main>
-            <section>
-                <h3>Formação</h3>
-                <p>Técnico em Informática Integrado ao Ensino Médio<br>
-                    Instituto Federal de Educação, Ciência e Tecnologia do Triângulo Mineiro, 
-                    campus Ituiutaba<br>Fevereiro de 2019 até dezembro de 2021.
-                </p>
-                <p>
-                    Bacharelado em Ciência da Computação<br>
-                    Instituto Federal de Educação, Ciência e Tecnologia do Triângulo Mineiro, 
-                    campus Ituiutaba<br>Março de 2022 até o presente momento, cursando o 6° período.
-                </p>
-            </section>
-            <section>
-                <h3>Idiomas</h3>
-                <p>
-                    Português - Nativo; Inglês - Avançado.
-                </p>
-                <p>Certificações<br>
-                    - The English Upper Intermediate Course by Cultura Inglesa<br>
-                    - Cambridge Assessment English:  First Certificate in English (FCE) - Nível (B2)
-                </p>
-            </section>
-            <section>
-                <h3> Soft Skills</h3>
-                <p>Comunicação eficaz, fácil aprendizado, trabalho em equipe, flexibilidade e resiliência.</p>
-            </section>
-        </main>
-    
-        <footer>
-            <a href="https://github.com/cauanlsreis" target="_blank" rel="noopener noreferrer">
-               <img src="./img/github.svg"></img>
-               <p>Github</p>
-            </a>
-    
-            <a href="www.linkedin.com/in/cauanlucasreis" target="_blank" rel="noopener noreferrer">
-                <img src="./img/linkedin.svg"></img>
-                <p>Linkedin</p>
-            </a>
-    
-            <a href="mailto:cauanlucas.reis@gmailcom" target="_blank" rel="noopener noreferrer">
-                <img src="./img/gmail.svg"></img>
-                <p>Email</p>
-            </a>
-        </footer>
-    </div><!--Container-->
+    </header>
+
+    <main>
+        
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="introducao-topo-do-site">
+                        <h1>Olá, me chamo <span>Cauan Lucas Silva Reis.</span></h1>
+                        <p>Tenho 20 anos, sou estudante do 6° período de Bacharelado em Ciência da Computação, 
+                            gosto da área de cibersegurança e atualmente estou desenvolvendo um projeto de 
+                            visão computacional com python e estudando front-end. 
+                            Procuro um estágio na área de desenvolvedor, estou disposto a aprender 
+                            novas linguagens e usar novas ferramentas confrome necessário.
+                         </p>
+
+                         <div class="botao-contato">
+                            <a href="contacts.html"> 
+                                <button>Entrar em contato</button>
+                            </a>
+                        </div> <!--botao-contato-->
+                    </div><!--introducao-topo-do-site-->
+                    <div class="img-topo-do-site">
+                        <img src="img/Cauan.jpeg">
+                    </div><!--img-topo-do-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+    </main>
+        
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="botao-social">
+                        <a href="https://github.com/cauanlsreis"><button><i class="bi bi-github"></i></button></a>
+                        <a href="#"><button><i class="bi bi-telegram"></i></button></a>
+                        <a href="www.linkedin.com/in/cauanlucasreis"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div><!--botao-social-->
+                </div><!--flex-->
+            </div><!--linefooter-->
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i><a href="mailto:cauanlucas.reis@gmail.com">cauanlucas.reis@gmail.com</a></p>
+            </div>
+        </div><!--interface-->
+    </footer>
     
 </body>
 </html>
